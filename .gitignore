@@ -1,0 +1,24 @@
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Dataset
+dataset/train/
+dataset/test/
+dataset/ood/
+
+# Generated outputs
+logs/
+outputs/
+
+# Input test images
+input_images/
+
+# OS files
+.DS_Store
+Thumbs.db
