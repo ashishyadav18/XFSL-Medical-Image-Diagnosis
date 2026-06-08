@@ -167,7 +167,7 @@ The selected threshold of **τ = 0.55** provides the optimal balance between dia
 
 # Feature Space Visualization
 
-![t-SNE Projection](assets/tsne-visualization.png)
+![t-SNE Projection](assets/tsne_visualization.png)
 
 The learned embedding space demonstrates strong separation between clinically distinct lesion categories while preserving biologically meaningful overlap between visually similar classes.
 
