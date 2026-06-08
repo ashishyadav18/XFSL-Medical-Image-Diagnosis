@@ -13,11 +13,13 @@ Unlike traditional deep learning models that operate as black boxes and require 
 
 ---
 
-# Live Demo
+## Live Demo
 
-**Frontend:** [Vercel Deployment URL]
+Web Application:
+https://huggingface.co/spaces/ashishyadav23/xfsl-medical-ai-web
 
-**Backend API:** [Render Deployment URL]
+Project Website:
+https://ashishyadav18.github.io/XFSL-Medical-Image-Diagnosis/
 
 ---
 
@@ -309,14 +311,6 @@ If you use this work in your research, please cite:
 
 ---
 -->
-
-## Live Demo
-
-Web Application:
-https://huggingface.co/spaces/ashishyadav23/xfsl-medical-ai-web
-
-Project Website:
-https://ashishyadav18.github.io/XFSL-Medical-Image-Diagnosis/
 
 # Author
 
