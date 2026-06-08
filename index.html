@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>XFSL Medical AI</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f5f7fb;
+    color:#222;
+}
+
+header{
+    background:#111827;
+    color:white;
+    padding:60px 20px;
+    text-align:center;
+}
+
+header h1{
+    margin:0;
+    font-size:3rem;
+}
+
+header p{
+    max-width:900px;
+    margin:auto;
+    margin-top:20px;
+    line-height:1.7;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.section{
+    margin-bottom:60px;
+}
+
+.section h2{
+    border-left:5px solid #2563eb;
+    padding-left:12px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:12px;
+    padding:20px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+img{
+    width:100%;
+    border-radius:10px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 20px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    margin:10px 5px;
+}
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>XFSL Medical AI</h1>
+
+<p>
+Explainable Prototype-Based Few-Shot Learning Framework
+for Skin Lesion Classification, OOD Detection,
+Similarity-Gap Uncertainty Estimation and Grad-CAM Explainability.
+</p>
+
+<a class="btn" href="https://github.com/ashishyadav18/XFSL-Medical-Image-Diagnosis" target="_blank">
+GitHub Repository
+</a>
+
+<a class="btn" href="article/Explainable_Few_Shot_Learning_for_Medical_Image_Diagnosis.pdf" target="_blank">
+Research Paper
+</a>
+</header>
+
+<div class="container">
+
+<div class="section">
+<h2>Project Overview</h2>
+
+<div class="card">
+<p>
+This project was developed as a research dissertation focused on
+Explainable Few-Shot Learning (XFSL) for medical image diagnosis.
+The framework combines EfficientNet-B0 feature extraction,
+prototype-based reasoning, Out-of-Distribution detection,
+uncertainty estimation and Grad-CAM explainability into a unified
+clinical decision support system.
+</p>
+</div>
+</div>
+
+<div class="section">
+<h2>System Architecture</h2>
+
+<img src="assets/architecture.png">
+</div>
+
+<div class="section">
+<h2>Research Highlights</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Few-Shot Learning</h3>
+<p>Prototype-based classification under limited data conditions.</p>
+</div>
+
+<div class="card">
+<h3>OOD Detection</h3>
+<p>Rejects unfamiliar samples using cosine similarity thresholding.</p>
+</div>
+
+<div class="card">
+<h3>Similarity Gap (Δ)</h3>
+<p>Provides interpretable uncertainty estimation.</p>
+</div>
+
+<div class="card">
+<h3>Grad-CAM</h3>
+<p>Visual explanations highlighting diagnostically relevant regions.</p>
+</div>
+
+</div>
+</div>
+
+<div class="section">
+<h2>Dashboard Screenshots</h2>
+
+<div class="grid">
+
+<img src="assets/dashboard-home.png">
+
+<img src="assets/dashboard-results1.png">
+
+<img src="assets/dashboard-results2.png">
+
+<img src="assets/dashboard-results3.png">
+
+</div>
+</div>
+
+<div class="section">
+<h2>Feature Space Visualization</h2>
+
+<img src="assets/tsne_visualization.png">
+</div>
+
+<div class="section">
+<h2>Repository</h2>
+
+<div class="card">
+<p>
+Source Code, Research Paper, Experimental Results,
+Deployment Files and Documentation are available
+through the GitHub repository.
+</p>
+
+<a class="btn" href="https://github.com/ashishyadav18/XFSL-Medical-Image-Diagnosis" target="_blank">
+View Repository
+</a>
+</div>
+</div>
+
+</div>
+
+<footer>
+<h3>Ashish Yadav</h3>
+<p>
+XFSL Medical AI Research Project
+</p>
+</footer>
+
+</body>
+</html>
