@@ -228,63 +228,13 @@ Returns:
 
 ---
 
-# Deployment
+## Live Demo
 
-## Frontend
+Web Application:
+https://huggingface.co/spaces/ashishyadav23/xfsl-medical-ai-web
 
-Recommended platform:
-
-```text
-Vercel
-```
-
-Deploy:
-
-```text
-deployment/frontend/
-```
-
----
-
-## Backend
-
-Recommended platform:
-
-```text
-Render
-```
-
-Deploy:
-
-```text
-deployment/
-```
-
-using:
-
-```bash
-uvicorn api:app --host 0.0.0.0 --port $PORT
-```
-
----
-
-# Screenshots
-
-Add screenshots later inside:
-
-```text
-assets/
-```
-
-Suggested files:
-
-```text
-assets/
-├── dashboard-home.png
-├── dashboard-results.png
-├── gradcam-example.png
-└── architecture.png
-```
+Project Website:
+https://ashishyadav18.github.io/XFSL-Medical-Image-Diagnosis/
 
 ---
 
