@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>XFSL Medical AI </title>
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Background Effects -->
+
+    <div class="bg-gradient"></div>
+
+    <div class="floating-circle circle-1"></div>
+    <div class="floating-circle circle-2"></div>
+    <div class="floating-circle circle-3"></div>
+
+    <div class="container">
+
+        <!-- HERO SECTION -->
+
+        <header class="hero">
+
+            <div class="hero-badge">
+                Explainable AI • Few-Shot Learning
+            </div>
+
+            <h1>
+                XFSL Medical
+                <span>Image Diagnosis</span>
+            </h1>
+
+            <p class="subtitle">
+                Advanced Skin Lesion Classification using Explainable Artificial
+                Intelligence with Prototype-Based Few-Shot Learning
+            </p>
+
+        </header>
+
+        <!-- UPLOAD SECTION -->
+
+        <section class="upload-card">
+
+            <div class="upload-left">
+
+                <h2>Upload Medical Image</h2>
+
+                <p>
+                    Select a skin lesion image and receive AI-powered diagnosis,
+                    confidence scores, Grad-CAM visualization, and explainable
+                    reasoning.
+                </p>
+
+            </div>
+
+            <div class="upload-right">
+
+                <input
+                    type="file"
+                    id="imageInput"
+                    accept="image/*"
+                >
+
+                <button onclick="predictImage()">
+                    Analyze Image
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- LOADING -->
+
+        <div id="loading" class="hidden loading-card">
+
+            <div class="loader"></div>
+
+            <h3>Analyzing Image</h3>
+
+            <p>
+                Running XFSL model and generating explainability maps...
+            </p>
+
+        </div>
+
+        <!-- RESULTS -->
+
+        <div id="results" class="hidden">
+
+            <!-- QUICK STATS -->
+
+            <section class="cards">
+
+                <div class="card prediction-card">
+
+                    <div class="card-icon">
+                        🔬
+                    </div>
+
+                    <h3>Prediction</h3>
+
+                    <p id="prediction"></p>
+
+                </div>
+
+                <div class="card confidence-card">
+
+                    <div class="card-icon">
+                        📈
+                    </div>
+
+                    <h3>Confidence</h3>
+
+                    <p id="confidence"></p>
+
+                </div>
+
+                <div class="card status-card">
+
+                    <div class="card-icon">
+                        ✅
+                    </div>
+
+                    <h3>Status</h3>
+
+                    <p id="clarity"></p>
+
+                </div>
+
+                <div class="card alternative-card">
+
+                    <div class="card-icon">
+                        🧬
+                    </div>
+
+                    <h3>Alternative Class</h3>
+
+                    <p id="alternative"></p>
+
+                </div>
+
+            </section>
+
+            <!-- ANALYSIS SUMMARY -->
+
+            <section class="summary-card">
+
+                <div class="section-header">
+
+                    <h2>AI Analysis Summary</h2>
+
+                    <div class="section-line"></div>
+
+                </div>
+
+                <div class="summary-content">
+
+                    <p id="reason"></p>
+
+                    <div class="delta-box">
+
+                        <span class="delta-label">
+                            Confidence Margin (Δ Score)
+                        </span>
+
+                        <span id="delta" class="delta-value"></span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- IMAGE COMPARISON -->
+
+            <section class="image-section">
+
+                <div class="section-header">
+
+                    <h2>Visual Interpretation</h2>
+
+                    <div class="section-line"></div>
+
+                </div>
+
+                <div class="image-row">
+
+                    <!-- Uploaded -->
+
+                    <div class="image-box">
+
+                        <div class="image-title">
+
+                            <span>📷</span>
+
+                            Uploaded Image
+
+                        </div>
+
+                        <img
+                            id="uploadedImage"
+                            alt="Uploaded Image"
+                        >
+
+                    </div>
+
+                    <!-- Heatmap -->
+
+                    <div class="image-box">
+
+                        <div class="image-title">
+
+                            <span>🔥</span>
+
+                            Grad-CAM Heatmap
+
+                        </div>
+
+                        <div
+                            id="heatmapPlaceholder"
+                            class="placeholder hidden"
+                        >
+
+                            <div class="ood-warning">
+
+                                <h3>
+                                    Out-of-Distribution Sample
+                                </h3>
+
+                                <p>
+                                    This image does not closely match any
+                                    learned XFSL prototype class.
+                                </p>
+
+                                <p>
+                                    Grad-CAM visualization is unavailable
+                                    for this sample.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <img
+                            id="heatmapImage"
+                            alt="Grad-CAM Heatmap"
+                        >
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- SIMILARITY SCORES -->
+
+            <section class="scores-section">
+
+                <div class="section-header">
+
+                    <h2>Class Similarity Scores</h2>
+
+                    <div class="section-line"></div>
+
+                </div>
+
+                <p class="scores-description">
+
+                    Distribution of similarity scores across all supported
+                    lesion categories.
+
+                </p>
+
+                <div id="scoreContainer"></div>
+
+            </section>
+
+        </div>
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <div class="footer-content">
+
+                <h3>XFSL Medical Image Diagnosis</h3>
+
+                <p>
+                    Explainable AI Research Demonstration
+                </p>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

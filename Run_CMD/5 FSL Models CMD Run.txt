@@ -1,0 +1,162 @@
+(venv) C:\Users\kaala\OneDrive\Desktop\Project_Article_v3>python Baseline_FSLs/baseline_knn.py
+Loading dataset from dataset/test...
+
+Running k-NN (k=3) Baseline (K=20, Runs=10)...
+-----------------------------------------------------------------
+Run   | Accuracy (%)    | Macro F1     | MCC
+-----------------------------------------------------------------
+1     | 73.74           | 0.7301       | 0.6747
+2     | 70.84           | 0.7011       | 0.6383
+3     | 71.91           | 0.7097       | 0.6519
+4     | 71.15           | 0.7092       | 0.6410
+5     | 74.66           | 0.7469       | 0.6840
+6     | 69.77           | 0.6934       | 0.6243
+7     | 69.16           | 0.6809       | 0.6214
+8     | 69.31           | 0.6894       | 0.6189
+9     | 72.67           | 0.7230       | 0.6595
+10    | 73.13           | 0.7191       | 0.6702
+-----------------------------------------------------------------
+🏁 FINAL k-NN RESULTS (K=20)
+=================================================================
+Mean Accuracy : 71.63% (Std Dev: 1.81%)
+Mean Macro F1 : 0.7103
+Mean MCC      : 0.6484
+=================================================================
+
+💾 Successfully saved detailed run logs to: logs/baseline_knn.csv
+
+(venv) C:\Users\kaala\OneDrive\Desktop\Project_Article_v3>python Baseline_FSLs/baseline_matching_network.py
+Loading dataset from dataset/test...
+
+Running Matching Networks Baseline (K=20, Runs=10)...
+-----------------------------------------------------------------
+Run   | Accuracy (%)    | Macro F1     | MCC
+-----------------------------------------------------------------
+1     | 75.27           | 0.7501       | 0.6936
+2     | 74.81           | 0.7418       | 0.6925
+3     | 72.98           | 0.7228       | 0.6672
+4     | 72.21           | 0.7177       | 0.6621
+5     | 76.18           | 0.7599       | 0.7060
+6     | 72.52           | 0.7227       | 0.6600
+7     | 70.84           | 0.6988       | 0.6451
+8     | 68.70           | 0.6737       | 0.6205
+9     | 76.79           | 0.7680       | 0.7115
+10    | 68.85           | 0.6538       | 0.6356
+-----------------------------------------------------------------
+🏁 FINAL MATCHING NETWORKS RESULTS (K=20)
+=================================================================
+Mean Accuracy : 72.92% (Std Dev: 2.72%)
+Mean Macro F1 : 0.7209
+Mean MCC      : 0.6694
+=================================================================
+
+💾 Successfully saved detailed run logs to: logs/baseline_matching_network.csv
+
+(venv) C:\Users\kaala\OneDrive\Desktop\Project_Article_v3>python Baseline_FSLs/baseline_random_forest.py
+Loading dataset from dataset/test...
+
+Running Random Forest Baseline (K=20, Runs=10)...
+-----------------------------------------------------------------
+Run   | Accuracy (%)    | Macro F1     | MCC
+-----------------------------------------------------------------
+1     | 73.28           | 0.7258       | 0.6686
+2     | 76.49           | 0.7622       | 0.7068
+3     | 74.35           | 0.7397       | 0.6810
+4     | 76.34           | 0.7603       | 0.7051
+5     | 76.64           | 0.7642       | 0.7096
+6     | 75.11           | 0.7470       | 0.6902
+7     | 73.13           | 0.7235       | 0.6670
+8     | 76.34           | 0.7581       | 0.7072
+9     | 74.05           | 0.7382       | 0.6764
+10    | 74.96           | 0.7446       | 0.6892
+-----------------------------------------------------------------
+🏁 FINAL RANDOM FOREST RESULTS (K=20)
+=================================================================
+Mean Accuracy : 75.07% (Std Dev: 1.27%)
+Mean Macro F1 : 0.7464
+Mean MCC      : 0.6901
+=================================================================
+
+💾 Successfully saved detailed run logs to: logs/baseline_random_forest.csv
+
+(venv) C:\Users\kaala\OneDrive\Desktop\Project_Article_v3>python Baseline_FSLs/baseline_svm.py
+Loading dataset from dataset/test...
+
+Running Linear SVM Baseline (K=20, Runs=10)...
+-----------------------------------------------------------------
+Run   | Accuracy (%)    | Macro F1     | MCC
+-----------------------------------------------------------------
+1     | 77.10           | 0.7679       | 0.7149
+2     | 78.32           | 0.7787       | 0.7322
+3     | 76.95           | 0.7672       | 0.7130
+4     | 77.86           | 0.7753       | 0.7252
+5     | 79.24           | 0.7901       | 0.7412
+6     | 76.34           | 0.7635       | 0.7046
+7     | 75.42           | 0.7477       | 0.6950
+8     | 74.81           | 0.7358       | 0.6924
+9     | 77.71           | 0.7772       | 0.7225
+10    | 77.10           | 0.7639       | 0.7163
+-----------------------------------------------------------------
+🏁 FINAL LINEAR SVM RESULTS (K=20)
+=================================================================
+Mean Accuracy : 77.08% (Std Dev: 1.25%)
+Mean Macro F1 : 0.7667
+Mean MCC      : 0.7157
+=================================================================
+
+💾 Successfully saved detailed run logs to: logs/baseline_svm.csv
+
+(venv) C:\Users\kaala\OneDrive\Desktop\Project_Article_v3>python Baseline_FSLs/baseline_vanilla_protonet.py
+Loading dataset from dataset/test...
+Classes: ['AKIEC', 'BCC', 'BKL', 'MEL', 'NV']
+
+Running Vanilla ProtoNet Baseline (K=20, Runs=10)...
+-----------------------------------------------------------------
+Run   | Accuracy (%)    | Macro F1     | MCC
+-----------------------------------------------------------------
+1     | 76.03           | 0.7582       | 0.7015
+2     | 76.49           | 0.7591       | 0.7087
+3     | 77.25           | 0.7715       | 0.7170
+4     | 76.18           | 0.7564       | 0.7052
+5     | 78.32           | 0.7804       | 0.7304
+6     | 74.66           | 0.7462       | 0.6835
+7     | 73.89           | 0.7342       | 0.6756
+8     | 75.27           | 0.7456       | 0.6956
+9     | 76.34           | 0.7629       | 0.7059
+10    | 74.50           | 0.7367       | 0.6846
+-----------------------------------------------------------------
+🏁 FINAL VANILLA PROTONET RESULTS (K=20)
+=================================================================
+Mean Accuracy : 75.89% (Std Dev: 1.27%)
+Mean Macro F1 : 0.7551
+Mean MCC      : 0.7008
+=================================================================
+
+💾 Successfully saved detailed run logs to: logs/baseline_vanilla_protonet.csv
+
+
+
+
+
+(venv) C:\Users\kaala\OneDrive\Desktop\Project_Article_v3>python Baseline_FSLs/proposed_fsl.py
+Loading dataset...
+
+Evaluating Proposed Framework (K=20)
+------------------------------------------------------------
+Run 1  | Acc: 76.34% | F1: 0.7620 | MCC: 0.7047
+Run 2  | Acc: 77.40% | F1: 0.7700 | MCC: 0.7201
+Run 3  | Acc: 77.56% | F1: 0.7750 | MCC: 0.7201
+Run 4  | Acc: 75.88% | F1: 0.7545 | MCC: 0.7017
+Run 5  | Acc: 78.93% | F1: 0.7869 | MCC: 0.7383
+Run 6  | Acc: 74.05% | F1: 0.7400 | MCC: 0.6763
+Run 7  | Acc: 73.74% | F1: 0.7327 | MCC: 0.6738
+Run 8  | Acc: 74.96% | F1: 0.7434 | MCC: 0.6930
+Run 9  | Acc: 76.79% | F1: 0.7681 | MCC: 0.7108
+Run 10 | Acc: 76.95% | F1: 0.7643 | MCC: 0.7153
+============================================================
+MEAN ACCURACY : 76.26%
+MEAN F1 SCORE : 0.7597
+MEAN MCC      : 0.7054
+============================================================
+
+💾 Results saved to: logs/proposed_xfsl.csv

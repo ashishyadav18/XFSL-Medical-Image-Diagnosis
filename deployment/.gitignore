@@ -1,0 +1,35 @@
+# Python
+
+**pycache**/
+*.py[cod]
+
+# Virtual Environment
+
+venv/
+env/
+.venv/
+
+# Environment Variables
+
+.env
+
+# IDE
+
+.vscode/
+.idea/
+
+# Runtime Uploads
+
+uploads/*
+!uploads/.gitkeep
+
+# Runtime Outputs
+
+outputs/*
+!outputs/.gitkeep
+
+# OS
+
+.DS_Store
+Thumbs.db
+Desktop.ini
