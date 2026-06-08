@@ -284,26 +284,6 @@ python predict_and_explain.py
 
 ---
 
-# Deployment
-
-A production-ready deployment version is provided inside:
-
-```text
-deployment/
-```
-
-Architecture:
-
-```text
-Frontend (Vercel)
-        ↓
-FastAPI Backend (Render)
-        ↓
-PyTorch XFSL Inference Engine
-```
-
----
-
 # Research Paper
 
 The complete research article is available inside the `article/` directory.
