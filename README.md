@@ -15,10 +15,10 @@ Unlike traditional deep learning models that operate as black boxes and require 
 
 ## Live Demo
 
-Web Application:
+🌐 Hugging Face Space:
 https://huggingface.co/spaces/ashishyadav23/xfsl-medical-ai-web
 
-Project Website:
+🌐 Project Website:
 https://ashishyadav18.github.io/XFSL-Medical-Image-Diagnosis/
 
 ---
